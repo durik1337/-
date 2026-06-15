@@ -13,7 +13,8 @@ body {
     padding: 20px;
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
 }
 
 #display {
@@ -65,4 +66,35 @@ body {
 .equal:hover {
     background-color: #28a745;
     color: white;
+}
+
+@media (max-width: 360px) {
+    .calculator {
+        width: 100%;
+        max-width: 280px;
+        padding: 10px;
+    }
+    #display {
+        height: 50px;
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .btn {
+        padding: 15px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        background-color: #2b3035;
+    }
+    .calculator {
+        max-width: 400px !important;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    }
+    .btn {
+        padding: 25px !important;
+        font-size: 24px;
+    }
 }
